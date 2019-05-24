@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.25 (Build 198) on 2018-12-12 15:10 with libSBML version 5.17.0. -->
+<!-- Created by COPASI version 4.26 (Build 211) on 2019-05-22 17:08 with libSBML version 5.18.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1" level="3" version="1" layout:required="false" render:required="false">
   <model metaid="COPASI0" id="New_Model" name="New Model" substanceUnits="substance" timeUnits="time" volumeUnits="volume" areaUnits="area" lengthUnits="length" extentUnits="substance">
     <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#COPASI0">
+          <dcterms:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Heiland</vCard:Family>
+                  <vCard:Given>Ines</vCard:Given>
+                </vCard:N>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>UiT Arctic University of Norway</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dcterms:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2011-03-18T13:28:02Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2011-03-18T13:28:02Z</dcterms:W3CDTF>
+          </dcterms:modified>
+        </rdf:Description>
+      </rdf:RDF>
       <COPASI xmlns="http://www.copasi.org/static/sbml">
         <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
           <rdf:Description rdf:about="#COPASI0">
@@ -29,62 +52,16 @@
           </rdf:Description>
         </rdf:RDF>
       </COPASI>
-      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-        <rdf:Description rdf:about="#COPASI0">
-          <dcterms:creator>
-            <rdf:Bag>
-              <rdf:li rdf:parseType="Resource">
-                <vCard:N rdf:parseType="Resource">
-                  <vCard:Family>Heiland</vCard:Family>
-                  <vCard:Given>Ines</vCard:Given>
-                </vCard:N>
-                <vCard:ORG rdf:parseType="Resource">
-                  <vCard:Orgname>UiT Arctic University of Norway</vCard:Orgname>
-                </vCard:ORG>
-              </rdf:li>
-            </rdf:Bag>
-          </dcterms:creator>
-          <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>2011-03-18T13:28:02Z</dcterms:W3CDTF>
-          </dcterms:created>
-          <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>2011-03-18T13:28:02Z</dcterms:W3CDTF>
-          </dcterms:modified>
-        </rdf:Description>
-      </rdf:RDF>
     </annotation>
     <listOfFunctionDefinitions>
-      <functionDefinition metaid="COPASI60" id="Constant_flux__irreversible" name="Constant flux (irreversible)">
+      <functionDefinition metaid="COPASI54" id="MM_with_ET_and_scaling" name="MM with ET and scaling">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI60">
+              <rdf:Description rdf:about="#COPASI54">
                 <dcterms:created>
                   <rdf:Description>
-                    <dcterms:W3CDTF>2016-08-21T19:04:50Z</dcterms:W3CDTF>
-                  </rdf:Description>
-                </dcterms:created>
-              </rdf:Description>
-            </rdf:RDF>
-          </COPASI>
-        </annotation>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <lambda>
-            <bvar>
-              <ci> v </ci>
-            </bvar>
-            <ci> v </ci>
-          </lambda>
-        </math>
-      </functionDefinition>
-      <functionDefinition metaid="COPASI61" id="Product_inhibition_two_susbtrates_s2_const_scaling" name="Product inhibition two susbtrates s2 const scaling">
-        <annotation>
-          <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI61">
-                <dcterms:created>
-                  <rdf:Description>
-                    <dcterms:W3CDTF>2012-04-17T09:06:55Z</dcterms:W3CDTF>
+                    <dcterms:W3CDTF>2012-04-17T16:42:14Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
               </rdf:Description>
@@ -100,78 +77,7 @@
               <ci> scaling </ci>
             </bvar>
             <bvar>
-              <ci> Kcat </ci>
-            </bvar>
-            <bvar>
-              <ci> S1 </ci>
-            </bvar>
-            <bvar>
-              <ci> S2 </ci>
-            </bvar>
-            <bvar>
-              <ci> Km </ci>
-            </bvar>
-            <bvar>
-              <ci> I </ci>
-            </bvar>
-            <bvar>
-              <ci> Ki </ci>
-            </bvar>
-            <apply>
-              <divide/>
-              <apply>
-                <times/>
-                <ci> ET </ci>
-                <ci> scaling </ci>
-                <ci> Kcat </ci>
-                <ci> S1 </ci>
-                <ci> S2 </ci>
-              </apply>
-              <apply>
-                <times/>
-                <apply>
-                  <plus/>
-                  <ci> Km </ci>
-                  <ci> S1 </ci>
-                </apply>
-                <apply>
-                  <plus/>
-                  <cn> 1 </cn>
-                  <apply>
-                    <divide/>
-                    <ci> I </ci>
-                    <ci> Ki </ci>
-                  </apply>
-                </apply>
-              </apply>
-            </apply>
-          </lambda>
-        </math>
-      </functionDefinition>
-      <functionDefinition metaid="COPASI62" id="Competitive_inhibition_scaling" name="Competitive inhibition scaling">
-        <annotation>
-          <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI62">
-                <dcterms:created>
-                  <rdf:Description>
-                    <dcterms:W3CDTF>2012-04-16T15:04:09Z</dcterms:W3CDTF>
-                  </rdf:Description>
-                </dcterms:created>
-              </rdf:Description>
-            </rdf:RDF>
-          </COPASI>
-        </annotation>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-          <lambda>
-            <bvar>
-              <ci> ET </ci>
-            </bvar>
-            <bvar>
-              <ci> scaling </ci>
-            </bvar>
-            <bvar>
-              <ci> Kcat </ci>
+              <ci> kcat </ci>
             </bvar>
             <bvar>
               <ci> S </ci>
@@ -179,44 +85,29 @@
             <bvar>
               <ci> Km </ci>
             </bvar>
-            <bvar>
-              <ci> I </ci>
-            </bvar>
-            <bvar>
-              <ci> Ki </ci>
-            </bvar>
             <apply>
               <divide/>
               <apply>
                 <times/>
                 <ci> ET </ci>
                 <ci> scaling </ci>
-                <ci> Kcat </ci>
+                <ci> kcat </ci>
                 <ci> S </ci>
               </apply>
               <apply>
                 <plus/>
                 <ci> Km </ci>
                 <ci> S </ci>
-                <apply>
-                  <divide/>
-                  <apply>
-                    <times/>
-                    <ci> Km </ci>
-                    <ci> I </ci>
-                  </apply>
-                  <ci> Ki </ci>
-                </apply>
               </apply>
             </apply>
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI63" id="TwosubstratesMMs2constant" name="TwosubstratesMMs2constant">
+      <functionDefinition metaid="COPASI55" id="TwosubstratesMMs2constant" name="TwosubstratesMMs2constant">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI63">
+              <rdf:Description rdf:about="#COPASI55">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2011-03-18T13:32:39Z</dcterms:W3CDTF>
@@ -265,11 +156,11 @@
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI64" id="Competitie_inhibition_two_substrates_s2_const_scaling" name="Competitie inhibition two substrates s2 const scaling">
+      <functionDefinition metaid="COPASI56" id="Competitie_inhibition_two_substrates_s2_const_scaling" name="Competitie inhibition two substrates s2 const scaling">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI64">
+              <rdf:Description rdf:about="#COPASI56">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2012-09-07T15:28:34Z</dcterms:W3CDTF>
@@ -373,11 +264,11 @@
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI65" id="Product_inhibition_scaling" name="Product inhibition scaling">
+      <functionDefinition metaid="COPASI57" id="Product_inhibition_scaling" name="Product inhibition scaling">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI65">
+              <rdf:Description rdf:about="#COPASI57">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2012-04-16T15:04:09Z</dcterms:W3CDTF>
@@ -437,14 +328,14 @@
           </lambda>
         </math>
       </functionDefinition>
-      <functionDefinition metaid="COPASI66" id="MM_with_ET_and_scaling" name="MM with ET and scaling">
+      <functionDefinition metaid="COPASI58" id="Product_inhibition_two_susbtrates_s2_const_scaling" name="Product inhibition two susbtrates s2 const scaling">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI66">
+              <rdf:Description rdf:about="#COPASI58">
                 <dcterms:created>
                   <rdf:Description>
-                    <dcterms:W3CDTF>2012-04-17T16:42:14Z</dcterms:W3CDTF>
+                    <dcterms:W3CDTF>2012-04-17T09:06:55Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
               </rdf:Description>
@@ -460,13 +351,22 @@
               <ci> scaling </ci>
             </bvar>
             <bvar>
-              <ci> kcat </ci>
+              <ci> Kcat </ci>
             </bvar>
             <bvar>
-              <ci> S </ci>
+              <ci> S1 </ci>
+            </bvar>
+            <bvar>
+              <ci> S2 </ci>
             </bvar>
             <bvar>
               <ci> Km </ci>
+            </bvar>
+            <bvar>
+              <ci> I </ci>
+            </bvar>
+            <bvar>
+              <ci> Ki </ci>
             </bvar>
             <apply>
               <divide/>
@@ -474,15 +374,203 @@
                 <times/>
                 <ci> ET </ci>
                 <ci> scaling </ci>
-                <ci> kcat </ci>
+                <ci> Kcat </ci>
+                <ci> S1 </ci>
+                <ci> S2 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> Km </ci>
+                  <ci> S1 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> I </ci>
+                    <ci> Ki </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI59" id="Competitive_inhibition_scaling" name="Competitive inhibition scaling">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI59">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:04:09Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> ET </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> Kcat </ci>
+            </bvar>
+            <bvar>
+              <ci> S </ci>
+            </bvar>
+            <bvar>
+              <ci> Km </ci>
+            </bvar>
+            <bvar>
+              <ci> I </ci>
+            </bvar>
+            <bvar>
+              <ci> Ki </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
                 <ci> S </ci>
               </apply>
               <apply>
                 <plus/>
                 <ci> Km </ci>
                 <ci> S </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> Km </ci>
+                    <ci> I </ci>
+                  </apply>
+                  <ci> Ki </ci>
+                </apply>
               </apply>
             </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI60" id="Two_substrate_product_inhibiton_scaling" name="Two substrate product inhibiton scaling">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI60">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T09:06:55Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> ET </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> Kcat </ci>
+            </bvar>
+            <bvar>
+              <ci> I </ci>
+            </bvar>
+            <bvar>
+              <ci> Ki </ci>
+            </bvar>
+            <bvar>
+              <ci> Kma </ci>
+            </bvar>
+            <bvar>
+              <ci> Kmb </ci>
+            </bvar>
+            <bvar>
+              <ci> B </ci>
+            </bvar>
+            <bvar>
+              <ci> A </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> A </ci>
+                <ci> B </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Kma </ci>
+                  <apply>
+                    <plus/>
+                    <ci> Kmb </ci>
+                    <ci> B </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <cn> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> I </ci>
+                      <ci> Ki </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> A </ci>
+                  <ci> Kmb </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> A </ci>
+                  <ci> B </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI61" id="Constant_flux__irreversible" name="Constant flux (irreversible)">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI61">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-08-21T19:04:50Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> v </ci>
+            </bvar>
+            <ci> v </ci>
           </lambda>
         </math>
       </functionDefinition>
@@ -742,7 +830,7 @@
           </COPASI>
         </annotation>
       </species>
-      <species metaid="COPASI16" id="SAM" name="SAM" compartment="Cytosol" initialConcentration="1" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+      <species metaid="COPASI16" id="SAM" name="SAM" compartment="Cytosol" initialConcentration="0.08" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -894,7 +982,7 @@
           </COPASI>
         </annotation>
       </parameter>
-      <parameter metaid="COPASI26" id="NADbiosynthesis" name="NADbiosynthesis" value="100" constant="true">
+      <parameter metaid="COPASI26" id="NADbiosynthesis" name="NMNAT E_T" value="10" constant="true">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -924,22 +1012,65 @@
           </COPASI>
         </annotation>
       </parameter>
-    </listOfParameters>
-    <listOfReactions>
-      <reaction metaid="COPASI28" id="NADA" name="NADA" reversible="false" fast="false">
+      <parameter metaid="COPASI28" id="NamPT_NNMT_flux" name="NamPT/NNMT flux" constant="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <rdf:Description rdf:about="#COPASI28">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2019-04-27T11:21:20Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+    </listOfParameters>
+    <listOfRules>
+      <assignmentRule variable="NamPT_NNMT_flux">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <ci> NAMPT </ci>
+            <ci> NNMT </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction metaid="COPASI29" id="NADA" name="NADA" reversible="false" fast="false">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI29">
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/3.5.1.19"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/22229411"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI29">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <dcterms:description>Km 0.033 and Kcat 8.5</dcterms:description>
-                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:3036844"/>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <dcterms:description>used values</dcterms:description>
                     <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:22229411"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
@@ -952,25 +1083,6 @@
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI28">
-              <bqbiol:isPartOf>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/ec-code/3.5.1.19"/>
-                </rdf:Bag>
-              </bqbiol:isPartOf>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/3036844"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/22229411"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NAM" stoichiometry="1" constant="true"/>
@@ -1004,14 +1116,28 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI29" id="NAPRT" name="NAPRT" reversible="false" fast="false">
+      <reaction metaid="COPASI30" id="NAPRT" name="NAPRT" reversible="false" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI30">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.4.2.11"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/18823127"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI29">
+              <rdf:Description rdf:about="#COPASI30">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:6224784"/>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:18823127"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
                 <dcterms:created>
@@ -1023,20 +1149,6 @@
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI29">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.4.2.11"/>
-                </rdf:Bag>
-              </bqbiol:is>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/6224784"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NA" stoichiometry="1" constant="true"/>
@@ -1071,11 +1183,35 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI30" id="NNMT" name="NNMT" reversible="false" fast="false">
+      <reaction metaid="COPASI31" id="NNMT" name="NNMT" reversible="false" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI31">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/441255"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.1.1.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/8182091"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/2963591"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI30">
+              <rdf:Description rdf:about="#COPASI31">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <dcterms:description>Km from recombinant human enzyme, similar to mouse Km</dcterms:description>
@@ -1098,30 +1234,6 @@
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI30">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/brenda/441255"/>
-                </rdf:Bag>
-              </bqbiol:is>
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.1.1.1"/>
-                </rdf:Bag>
-              </bqbiol:is>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/2963591"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/8182091"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NAM" stoichiometry="1" constant="true"/>
@@ -1137,44 +1249,76 @@
               <times/>
               <ci> Cytosol </ci>
               <apply>
-                <ci> Product_inhibition_scaling </ci>
+                <ci> Two_substrate_product_inhibiton_scaling </ci>
                 <ci> ET </ci>
                 <ci> scaling </ci>
                 <ci> Kcat </ci>
-                <ci> NAM </ci>
-                <ci> Km </ci>
                 <ci> _1_methyl_NAM </ci>
                 <ci> Ki </ci>
+                <ci> Kma </ci>
+                <ci> Kmb </ci>
+                <ci> NAM </ci>
+                <ci> SAM </ci>
               </apply>
             </apply>
           </math>
           <listOfLocalParameters>
             <localParameter id="ET" name="ET" value="10"/>
             <localParameter id="Kcat" name="Kcat" value="8.1"/>
-            <localParameter id="Km" name="Km" value="0.4"/>
             <localParameter id="Ki" name="Ki" value="0.06"/>
+            <localParameter id="Kma" name="Kma" value="0.0018"/>
+            <localParameter id="Kmb" name="Kmb" value="0.4"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI31" id="NMNAT1_NaMN" name="NMNAT1-NaMN" reversible="true" fast="false">
+      <reaction metaid="COPASI32" id="NMNAT1_NaMN" name="NMNAT1-NaMN" reversible="true" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI32">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.18"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/17402747"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/16118205"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI31">
+              <rdf:Description rdf:about="#COPASI32">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <dcterms:description>values used</dcterms:description>
+                    <dcterms:description>Km, turnover forward reaction</dcterms:description>
                     <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/0003-9861(67)90262-7"/>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <dcterms:description>Keq</dcterms:description>
+                    <dcterms:description>Keq used to calculate turnover for reverse reaction</dcterms:description>
                     <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
@@ -1188,35 +1332,6 @@
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI31">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.1"/>
-                </rdf:Bag>
-              </bqbiol:is>
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.18"/>
-                </rdf:Bag>
-              </bqbiol:is>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/0003-9861(67)90262-7"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/17402747"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/16118205"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NaMN" stoichiometry="1" constant="true"/>
@@ -1257,16 +1372,30 @@
             <localParameter id="Km_A" name="Km_A" value="0.0677"/>
             <localParameter id="kcat_PA" name="kcat_PA" value="103.8"/>
             <localParameter id="Km_PA" name="Km_PA" value="0.502"/>
-            <localParameter id="Km_B" name="Km_B" value="22.3"/>
+            <localParameter id="Km_B" name="Km_B" value="0.0223"/>
             <localParameter id="Km_PB" name="Km_PB" value="0.059"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI32" id="NADS" name="NADS" reversible="false" fast="false">
+      <reaction metaid="COPASI33" id="NADS" name="NADS" reversible="false" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI33">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/6.3.5.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/4340699"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI32">
+              <rdf:Description rdf:about="#COPASI33">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:4340699"/>
@@ -1281,20 +1410,6 @@
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI32">
-              <bqbiol:is>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/ec-code/6.3.5.1"/>
-                </rdf:Bag>
-              </bqbiol:is>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/4340699"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NaAD" stoichiometry="1" constant="true"/>
@@ -1331,11 +1446,20 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI33" id="SIRT" name="SIRT" reversible="false" fast="false">
+      <reaction metaid="COPASI34" id="SIRT" name="SIRT" reversible="false" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI34">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1021/bi049592e"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI33">
+              <rdf:Description rdf:about="#COPASI34">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1021/bi049592e"/>
@@ -1349,15 +1473,6 @@
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI33">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1021/bi049592e"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NAD" stoichiometry="1" constant="true"/>
@@ -1393,7 +1508,7 @@
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI34" id="NAM_import" name="NAM import" reversible="false" fast="false">
+      <reaction metaid="COPASI35" id="NAM_import" name="NAM import" reversible="false" fast="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <pre>cell size HeLa 3e-12 l
@@ -1417,7 +1532,7 @@ thus approx. 0.2 mikroM/s
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI34">
+              <rdf:Description rdf:about="#COPASI35">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2012-04-17T11:49:02Z</dcterms:W3CDTF>
@@ -1446,16 +1561,36 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI35" id="NAMPT" name="NAMPT" reversible="false" fast="false">
+      <reaction metaid="COPASI36" id="NAMPT" name="NAMPT" reversible="false" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI36">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.4.2.12"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/18823127"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI35">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI36">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:18823127"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2012-09-07T08:19:58Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.4.2.12"/>
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
@@ -1489,23 +1624,61 @@ thus approx. 0.2 mikroM/s
             </apply>
           </math>
           <listOfLocalParameters>
-            <localParameter id="ET" name="ET" value="100"/>
+            <localParameter id="ET" name="ET" value="400"/>
             <localParameter id="Kcat" name="Kcat" value="0.0077"/>
             <localParameter id="Km" name="Km" value="5e-06"/>
             <localParameter id="Ki" name="Ki" value="0.0021"/>
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI36" id="NMNAT1_NMN" name="NMNAT1-NMN" reversible="true" fast="false">
+      <reaction metaid="COPASI37" id="NMNAT1_NMN" name="NMNAT1-NMN" reversible="true" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI37">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.18"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/17402747"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/16118205"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
-            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI36">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI37">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km, turnover forward reaction</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Keq used to calculate turnover for reverse reaction</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2012-09-07T09:33:17Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.1"/>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.18"/>
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
@@ -1554,16 +1727,30 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI37" id="NT5_NaMN" name="NT5-NaMN" reversible="false" fast="false">
+      <reaction metaid="COPASI38" id="NT5_NaMN" name="NT5-NaMN" reversible="false" fast="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <pre>Km and Kcat from CN-II</pre>
           </body>
         </notes>
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI38">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/3.1.3.5"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI37">
+              <rdf:Description rdf:about="#COPASI38">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <dcterms:description>Km</dcterms:description>
@@ -1575,18 +1762,10 @@ thus approx. 0.2 mikroM/s
                     <dcterms:W3CDTF>2012-09-07T09:44:57Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:3.1.3.5"/>
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI37">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NaMN" stoichiometry="1" constant="true"/>
@@ -1617,16 +1796,30 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI38" id="NT5_NMN" name="NT5-NMN" reversible="false" fast="false">
+      <reaction metaid="COPASI39" id="NT5_NMN" name="NT5-NMN" reversible="false" fast="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <pre>KM and Kcat for CN-III</pre>
           </body>
         </notes>
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI39">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/3.1.3.5"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI38">
+              <rdf:Description rdf:about="#COPASI39">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <dcterms:description>Km</dcterms:description>
@@ -1638,18 +1831,10 @@ thus approx. 0.2 mikroM/s
                     <dcterms:W3CDTF>2012-09-07T15:21:48Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:3.1.3.5"/>
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI38">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NMN" stoichiometry="1" constant="true"/>
@@ -1680,11 +1865,11 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI39" id="Nam_efflux" name="Nam-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI40" id="Nam_efflux" name="Nam-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI39">
+              <rdf:Description rdf:about="#COPASI40">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -1708,16 +1893,30 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI40" id="NRK1_NMN" name="NRK1-NMN" reversible="false" fast="false">
+      <reaction metaid="COPASI41" id="NRK1_NMN" name="NRK1-NMN" reversible="false" fast="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <pre>Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol</pre>
           </body>
         </notes>
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI41">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.1.173"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI40">
+              <rdf:Description rdf:about="#COPASI41">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
@@ -1729,18 +1928,10 @@ thus approx. 0.2 mikroM/s
                     <dcterms:W3CDTF>2016-09-30T10:16:21Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.1.173"/>
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI40">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NR" stoichiometry="1" constant="true"/>
@@ -1773,14 +1964,28 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI41" id="PNP_NR" name="PNP-NR" reversible="false" fast="false">
+      <reaction metaid="COPASI42" id="PNP_NR" name="PNP-NR" reversible="false" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI42">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI41">
+              <rdf:Description rdf:about="#COPASI42">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
                 <dcterms:bibliographicCitation>
@@ -1797,20 +2002,6 @@ thus approx. 0.2 mikroM/s
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI41">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/S0163-7258(00)00097-8"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NR" stoichiometry="1" constant="true"/>
@@ -1845,11 +2036,11 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI42" id="NAD_binding" name="NAD-binding" reversible="true" fast="false">
+      <reaction metaid="COPASI43" id="NAD_binding" name="NAD-binding" reversible="true" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI42">
+              <rdf:Description rdf:about="#COPASI43">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2016-12-09T15:18:22Z</dcterms:W3CDTF>
@@ -1891,16 +2082,30 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI43" id="NRK1_NaMN" name="NRK1-NaMN" reversible="false" fast="false">
+      <reaction metaid="COPASI44" id="NRK1_NaMN" name="NRK1-NaMN" reversible="false" fast="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <pre>Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol for NMN</pre>
           </body>
         </notes>
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI44">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.1.173"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI43">
+              <rdf:Description rdf:about="#COPASI44">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
@@ -1912,18 +2117,10 @@ thus approx. 0.2 mikroM/s
                     <dcterms:W3CDTF>2016-09-30T10:16:21Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.1.173"/>
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI43">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NAR" stoichiometry="1" constant="true"/>
@@ -1956,19 +2153,33 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI44" id="PNP_NAR" name="PNP-NAR" reversible="false" fast="false">
+      <reaction metaid="COPASI45" id="PNP_NAR" name="PNP-NAR" reversible="false" fast="false">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
             <pre>Parameter have to be adjusted for NAR...currently NR affinities are used</pre>
           </body>
         </notes>
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI45">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI44">
+              <rdf:Description rdf:about="#COPASI45">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
-                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:"/>
                   </rdf:Description>
                 </dcterms:bibliographicCitation>
                 <dcterms:bibliographicCitation>
@@ -1985,20 +2196,6 @@ thus approx. 0.2 mikroM/s
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI44">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/S0163-7258(00)00097-8"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NAR" stoichiometry="1" constant="true"/>
@@ -2033,11 +2230,11 @@ thus approx. 0.2 mikroM/s
           </listOfLocalParameters>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI45" id="NAD_efflux" name="NAD-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI46" id="NAD_efflux" name="NAD-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI45">
+              <rdf:Description rdf:about="#COPASI46">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2061,11 +2258,11 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI46" id="NMN_efflux" name="NMN-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI47" id="NMN_efflux" name="NMN-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI46">
+              <rdf:Description rdf:about="#COPASI47">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2089,11 +2286,11 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI47" id="NR_efflux" name="NR-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI48" id="NR_efflux" name="NR-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI47">
+              <rdf:Description rdf:about="#COPASI48">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2117,11 +2314,11 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI48" id="NAR_efflux" name="NAR-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI49" id="NAR_efflux" name="NAR-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI48">
+              <rdf:Description rdf:about="#COPASI49">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2145,11 +2342,11 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI49" id="NA_efflux" name="NA-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI50" id="NA_efflux" name="NA-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI49">
+              <rdf:Description rdf:about="#COPASI50">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2173,11 +2370,11 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI50" id="NAMN_efflux" name="NAMN-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI51" id="NAMN_efflux" name="NAMN-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI50">
+              <rdf:Description rdf:about="#COPASI51">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2201,11 +2398,11 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI51" id="NaAD_efflux" name="NaAD-efflux" reversible="false" fast="false">
+      <reaction metaid="COPASI52" id="NaAD_efflux" name="NaAD-efflux" reversible="false" fast="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI51">
+              <rdf:Description rdf:about="#COPASI52">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2229,11 +2426,20 @@ thus approx. 0.2 mikroM/s
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI52" id="NAD_consumption_without_inhibition" name="NAD consumption without inhibition" reversible="false" fast="false">
+      <reaction metaid="COPASI53" id="NAD_consumption_without_inhibition" name="NAD consumption without inhibition" reversible="false" fast="false">
         <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI53">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1021/bi049592e"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI52">
+              <rdf:Description rdf:about="#COPASI53">
                 <dcterms:bibliographicCitation>
                   <rdf:Description>
                     <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1021/bi049592e"/>
@@ -2247,15 +2453,6 @@ thus approx. 0.2 mikroM/s
               </rdf:Description>
             </rdf:RDF>
           </COPASI>
-          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
-            <rdf:Description rdf:about="#COPASI52">
-              <bqbiol:isDescribedBy>
-                <rdf:Bag>
-                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1021/bi049592e"/>
-                </rdf:Bag>
-              </bqbiol:isDescribedBy>
-            </rdf:Description>
-          </rdf:RDF>
         </annotation>
         <listOfReactants>
           <speciesReference species="NAD" stoichiometry="1" constant="true"/>
